@@ -53,7 +53,7 @@ int main (void)
 	a=b++*2;
 	printf("\n Inhalt der Variable a: %i", a);
 	printf("\n Inhalt der Variable b: %i", b);
-	printf("\n Erklärung: b wird mit 2 multipliziert, 2 wird in a geschrieben und dann wird erst b inkrementiert... Warum auch immer, jedenfalls kann a nicht anders 2 sein...");
+	printf("\n Erklärung: b wird mit 2 multipliziert, 2 wird in a geschrieben und dann wird erst b inkrementiert.");
 
 	printf("\n\n a = ++b * 2");
 

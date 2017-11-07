@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int a=3;
+int b;
 
 int main(void)
 {
@@ -19,4 +20,8 @@ int main(void)
   a=1;
 
   a=1==2;
+
+  b >>= 1;
+
+  printf("%i\n", b);
 }

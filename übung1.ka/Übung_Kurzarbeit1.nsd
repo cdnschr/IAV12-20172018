@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.27-02" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preForIn="foreach" stepFor="by" author="bpp" created="2017-11-15" changedby="bpp" changed="2017-11-15" origin="Structorizer 3.27-02" text="&#34;Übung Kurzarbeit&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Eingabe: taste = j&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<case text="&#34;Welchen Wert hat taste?&#34;,&#34;v&#34;,&#34;n&#34;,&#34;j&#34;,&#34;default&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qCase>
+				<instruction text="&#34;Sie haben vielleicht gewählt&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Sie haben nein gewählt&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Sie haben ja gewählt&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Nicht zulässig&#34;" comment="" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qCase>
+		</case>
+		<alternative text="&#34;Wenn taste = v&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qTrue>
+				<instruction text="&#34;Ausgabe: Guten Tag&#34;,&#34;Sie haben die Taste v gewählt.&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qTrue>
+			<qFalse color="ffffff">
+			</qFalse>
+		</alternative>
+		<case text="&#34;Welchen Wert hat taste?&#34;,&#34;d&#34;,&#34;n&#34;,&#34;k&#34;,&#34;default&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qCase>
+				<instruction text="&#34;Ausgabe: Sie haben Taste d gewählt.&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Ausgabe: Sie haben die Taste n gewählt.&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<alternative text="&#34;Wenn Taste = j&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;Ausgabe: Sie haben die Taste j gewählt.&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse color="ffffff">
+					</qFalse>
+				</alternative>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Ausgabe: Sie haben die Taste k gewählt&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;Ausgabe: Auf Wiedersehen!&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qCase>
+		</case>
+	</children>
+</root>

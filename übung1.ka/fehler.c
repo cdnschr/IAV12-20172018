@@ -9,8 +9,7 @@ int main(void)
   char taste; // ; zuviel
   char tmp; // lower case!
 
-  taste == 'j'; // Das ist ein Vergleichsoperator, hier müsste eine Zuweisung hin. Im Grunde syntaktisch richtig, aber das generiert Warnungen beim kompilieren, weil man das nicht so macht!
-
+  taste == 'j'; // Das ist ein Vergleichsoperator, hier müsste eine Zuweisung hin. Im Grunde syntaktisch richtig, aber das generiert Warnungen beim kompilieren.
   switch(taste)
   {
       case 'v':

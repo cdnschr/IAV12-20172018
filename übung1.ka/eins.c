@@ -26,30 +26,33 @@ int main(void){
     betrag = einzelK;
     strcpy(ausgabe, "Einzelfahrt Kind");
   }
-  if (auswahl == 1 && erwachsen == 2) {
+  else if (auswahl == 1 && erwachsen == 2) {
     printf("Eine Einzelfahrt für Erwachsene kostet: %2.2f €\n",einzelE );
     betrag = einzelE;
     strcpy(ausgabe, "Einzelfahrt Erwachsener");
   }
-  if (auswahl == 2 && erwachsen == 2) {
+  else if (auswahl == 2 && erwachsen == 2) {
     printf("Eine Streifenkarte für Erwachsene kostet: %2.2f €\n",streifenE );
     betrag = streifenE;
     strcpy(ausgabe, "Streifenkarte Erwachsener");
   }
-  if (auswahl == 2 && erwachsen == 1) {
+  else if (auswahl == 2 && erwachsen == 1) {
     printf("Eine Streifenkarte für Kinder kostet: %2.2f €\n",streifenK );
     betrag = streifenK;
     strcpy(ausgabe, "Streifenkarte Kind");
   }
-  if (auswahl == 3 && erwachsen == 1) {
+  else if (auswahl == 3 && erwachsen == 1) {
     printf("Eine Monatskarte für Kinder kostet: %2.2f €\n",monatK );
     betrag = monatK;
     strcpy(ausgabe, "Monatskarte Kind");
   }
-  if (auswahl == 3 && erwachsen == 2) {
+  else if (auswahl == 3 && erwachsen == 2) {
     printf("Eine Monatskarte für Erwachsene kostet: %2.2f €\n",monatE );
     betrag = monatE;
     strcpy(ausgabe, "Monatskarte Erwachsener");
+  }
+  else{
+    printf("Fehler in der Auswahl!\n");
   }
   printf("\nBitte werfen sie den benötigten Betrag ein\n");
   printf("Eingeworfener Betrag: %4.2f\n\n", einwurf);

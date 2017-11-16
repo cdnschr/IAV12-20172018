@@ -61,14 +61,17 @@ int main(void){
     printf("\nBitte werfen sie den benötigten Betrag ein\n");
     printf("Eingeworfener Betrag: %4.2f\n\n", einwurf);
 
-  if (einwurf == betrag) {
+    if (einwurf == betrag) {
       printf("Herzlichen Glückwunsch, sie haben eine %s gewählt und den passenden Betrag eingeworfen!\n", ausgabe );
       }
-    if (einwurf < betrag) {
+    else if (einwurf < betrag) {
       printf("Ihre %s kostet %4.2f € mehr als sie eingeworfen haben\n", ausgabe, betrag - einwurf );
       }
-    if (einwurf > betrag){
+    else if (einwurf > betrag){
       printf("Vielen Dank für den Kauf einer %s! Das Restgeld von %4.2f € behalten wir, weil sie ein Idiot sind!\n", ausgabe, einwurf - betrag );
+      }
+    else {
+      printf("Fehler!\n");
       }
   }
   return 0;

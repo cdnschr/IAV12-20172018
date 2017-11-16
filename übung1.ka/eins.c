@@ -4,6 +4,7 @@
 int main(void){
   int erwachsen = 0;
   int auswahl = 0;
+  int fehler = 0;
   char ausgabe[30];
   float einwurf = 1;
   float betrag = 0;
@@ -19,7 +20,7 @@ int main(void){
   printf("Auswahl:%i\n\n", erwachsen);
   printf("Möchten sie eine Einzelfahrt(1), Streifenkarte(2) oder Monatskarte(3)?\n");
   printf("Bitte Auswahl treffen:\n\n");
-  auswahl = 1; //Auch hier wird die Auswahl per Variable festgelegt
+  auswahl = 4; //Auch hier wird die Auswahl per Variable festgelegt
   printf("Auswahl:%i\n\n", auswahl );
   if (auswahl == 1 && erwachsen == 1) {
     printf("Eine Einzelfahrt für Kinder kostet: %2.2f €\n",einzelK );
@@ -53,18 +54,22 @@ int main(void){
   }
   else{
     printf("Fehler in der Auswahl!\n");
+    fehler = 1;
   }
-  printf("\nBitte werfen sie den benötigten Betrag ein\n");
-  printf("Eingeworfener Betrag: %4.2f\n\n", einwurf);
-  if (einwurf == betrag) {
-  printf("Herzlichen Glückwunsch, sie haben eine %s gewählt und den passenden Betrag eingeworfen!\n", ausgabe );
-  }
-  if (einwurf < betrag) {
-    printf("Ihre %s kostet %4.2f € mehr als sie eingeworfen haben\n", ausgabe, betrag - einwurf );
-  }
-  if (einwurf > betrag){
-    printf("Vielen Dank für den Kauf einer %s! Das Restgeld von %4.2f € behalten wir, weil sie ein Idiot sind!\n", ausgabe, einwurf - betrag );
-  }
+  if (fehler == 0)
+  {
+    printf("\nBitte werfen sie den benötigten Betrag ein\n");
+    printf("Eingeworfener Betrag: %4.2f\n\n", einwurf);
 
+  if (einwurf == betrag) {
+      printf("Herzlichen Glückwunsch, sie haben eine %s gewählt und den passenden Betrag eingeworfen!\n", ausgabe );
+      }
+    if (einwurf < betrag) {
+      printf("Ihre %s kostet %4.2f € mehr als sie eingeworfen haben\n", ausgabe, betrag - einwurf );
+      }
+    if (einwurf > betrag){
+      printf("Vielen Dank für den Kauf einer %s! Das Restgeld von %4.2f € behalten wir, weil sie ein Idiot sind!\n", ausgabe, einwurf - betrag );
+      }
+  }
   return 0;
 }

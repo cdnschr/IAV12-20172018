@@ -13,7 +13,7 @@ int main(void)
 {
   int erwachsen = 1;
   int karte = 1;
-  int einwurf = 2.40;
+  float einwurf = 2.40;
   int fehler = 0;
 
   switch (erwachsen) {
@@ -53,6 +53,7 @@ int main(void)
 
   if(fehler == 0){
         printf("Bitte bezahlen sie nun ihre ausgewählte Karte. \n");
+        printf("Einwurf: %4.2f\n",einwurf );
         switch (karte) {
           case 1:
             if(erwachsen == 0){

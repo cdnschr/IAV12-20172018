@@ -1,7 +1,6 @@
 /*
-    Mein erster Dezimal in Binär Umrechner - Version 0.1
-    All hail to the king baby!
-    Gibt noch eine Null am Anfang zuviel aus...
+    Mein erster Dezimal in Binär Umrechner - Version 0.2
+
 */
 
 #include <stdio.h>
@@ -29,13 +28,13 @@ int main(void){
   array = (int *) malloc(i * sizeof(int));  //dynamisches Array
 
   while (zahl > 0){     //Array wird mit Binärwert gefüllt
+    temp++;
     array[temp] = zahl % 2;
     zahl /= 2;
-    temp++;
+
   }
-  temp--;             //Die Null wird korrigiert
   printf("Umgerechneter Binärwert: ");
-  while (temp >= 0){  //Ausgabe des Arrays
+  while (temp > 0){  //Ausgabe des Arrays
     printf("%d", array[temp]);
     temp--;
   }

@@ -33,7 +33,7 @@ int main(void){
     zahl /= 2;
     temp++;
   }
-
+  temp--;             //Die Null wird korrigiert
   printf("Umgerechneter Binärwert: ");
   while (temp >= 0){  //Ausgabe des Arrays
     printf("%d", array[temp]);

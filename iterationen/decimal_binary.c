@@ -20,22 +20,22 @@ int main(void){
 
   temp = zahl;
 
-  while (temp > 0) {
+  while (temp > 0) {      //Hier wird erstmal ermittelt wie groß das Array sein soll
     temp /= 2;
     i++;
     printf("Durchgang: %d Ergebnis: %d \n", i, temp );
   }
 
-  array = (int *) malloc(i * sizeof(int));
+  array = (int *) malloc(i * sizeof(int));  //dynamisches Array
 
-  while (zahl > 0){
+  while (zahl > 0){     //Array wird mit Binärwert gefüllt
     array[temp] = zahl % 2;
     zahl /= 2;
     temp++;
   }
 
   printf("Umgerechneter Binärwert: ");
-  while (temp >= 0){
+  while (temp >= 0){  //Ausgabe des Arrays
     printf("%d", array[temp]);
     temp--;
   }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define BREITE 7
+#define BREITE 10
 #define fuell 'x'
 #define leer '-'
 
@@ -18,6 +18,12 @@ int main(void){
         printf("%c", fuell );
       }
       else if(j == BREITE){
+        printf("%c", fuell );
+      }
+      else if(i == j){
+        printf("%c", fuell );
+      }
+      else if(i+j == BREITE+1){
         printf("%c", fuell );
       }
       else{

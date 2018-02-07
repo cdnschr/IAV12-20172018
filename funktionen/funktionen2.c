@@ -34,10 +34,10 @@ void verarbeiten(char string1[], char string2[]){
     len2++;
   }
 
-  for(int i = 0; i <= len2; i++){
-    &s1[len1+1+i] = string2[i];
+  for(int i = 0; i < len2; i++){
+    string1[len1+i] = string2[i];
     if(i == len2)
-    &s1[len1+2+i] = '\0';
+    string1[len1+2+i] = '\0';
   }
 }
 

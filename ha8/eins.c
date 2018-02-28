@@ -20,5 +20,6 @@ step = (end - start) / part;
 for (int i = 0; i < part; i++){
   printf("%.2f\n", (start+=step) );
   }
+  
   return 0;
 }

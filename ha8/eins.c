@@ -59,7 +59,7 @@ void Ausgabe(double start,double end, int part){
     printf("%.2f°\t", (temp+=step) );
     }
   printf("\n");
-  
+
   temp = start;
 
   for (int i = 0; i < part; i++){

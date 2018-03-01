@@ -48,7 +48,7 @@ void Ausgabe(double start,double end, int part){
   temp = start;
 
   for (int i = 0; i < part; i++){
-    printf("%.2f\t", sin(temp+=step) );
+    printf("%.2f\t", sin(temp+=step) * M_PI / 180  );
     }
   printf("\n");
 
@@ -59,11 +59,11 @@ void Ausgabe(double start,double end, int part){
     printf("%.2f°\t", (temp+=step) );
     }
   printf("\n");
-  
+
   temp = start;
 
   for (int i = 0; i < part; i++){
-    printf("%.2f\t", cos(temp+=step) );
+    printf("%.2f\t", cos(temp+=step) * M_PI );
     }
   printf("\n");
 }

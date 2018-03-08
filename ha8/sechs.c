@@ -22,7 +22,7 @@ int print_char(const char *zeichen, ...){
     char stelle = zeichen[zaehler];
     switch (stelle) {
       default:
-            fputs(zeichen[zaehler],stdout);
+            fputs(stelle,stdout);
             zaehler++;
             break;
       case '\0':

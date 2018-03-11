@@ -1,4 +1,6 @@
 #include "mwst.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 void ermittle_Mwst(void);
 void Benutzerdialog(void);

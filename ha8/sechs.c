@@ -7,7 +7,8 @@ int print_char(const char *zeichen, ...);
 
 int main(void){
   const char zeichen[] = {"Buchstaben sind %c und %c.\nHier finden sie alles von %c bis %c\n"};
-  print_char(zeichen, 'A', 'B', 'C', 'D');
+  printf("%d\n", print_char(zeichen, 'A', 'B', 'C', 'D'));
+
   return 0;
 }
 
@@ -31,11 +32,16 @@ int print_char(const char *zeichen, ...){
             endlos = 0;
             return anzahl;
       case '%':
-            if (zeichen[zaehler]+1 == 'c')
-            stelle = va_arg(zeiger,char);
+            if((zeichen[zaehler+1]) == 'c'){
+            stelle = va_arg(zeiger, char);
             fputs(&stelle,stdout);
             zaehler+=2;
             anzahl++;
+            }
+            else{
+            fputs(&stelle,stdout);
+            zaehler++;
+            }
             break;
       case '\n':
             puts("");

@@ -13,7 +13,7 @@ void quit();
 
 int main(void){
 //  char alphabet[7][5][256]; //check es nicht ich machs anders
-const int zeichen[] = { 340, 525, 505, 0,  410, 340, 350};//, 0, 510, 525, 550, 500, 505, 0, 525 };
+const int zeichen[] = { 340, 525, 505, 0,  410, 340, 350, 0, 510, 525, 550, 500, 505, 0, 525 };
 int arraylen = sizeof(zeichen) / sizeof(int);
 int koordinate = 0;
 int counter = 0;
